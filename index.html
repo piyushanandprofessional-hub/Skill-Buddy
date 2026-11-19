@@ -1,0 +1,209 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillBuddy | Learn Together</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f7fb;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #172554;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h1 {
+            font-size: 28px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 22px;
+            font-weight: bold;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 90px 20px;
+            background: linear-gradient(135deg, #2563eb, #7c3aed);
+            color: white;
+        }
+
+        .hero h2 {
+            font-size: 44px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 650px;
+            margin: 0 auto 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: white;
+            color: #2563eb;
+            padding: 13px 28px;
+            border-radius: 7px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #e0e7ff;
+        }
+
+        .section {
+            padding: 65px 8%;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 32px;
+            margin-bottom: 15px;
+            color: #172554;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 22px;
+            margin-top: 35px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+        }
+
+        .card h3 {
+            color: #2563eb;
+            margin-bottom: 12px;
+        }
+
+        .about {
+            background: #e8efff;
+        }
+
+        footer {
+            background: #172554;
+            color: white;
+            text-align: center;
+            padding: 22px;
+        }
+
+        @media(max-width: 600px) {
+            header {
+                justify-content: center;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 7px;
+                font-size: 14px;
+            }
+
+            .hero h2 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>SkillBuddy</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <h2>Learn Together. Grow Together.</h2>
+    <p>
+        Welcome to SkillBuddy, a platform where students
+        exchange technical skills, share knowledge and
+        build a better future through collaborative learning.
+    </p>
+    <a class="btn"
+       href="src/main/resources/static/skill-exchange.html">
+       Explore Skill Exchange
+    </a>
+</section>
+
+<section class="section" id="features">
+    <h2>What We Offer</h2>
+    <p>Everything you need to learn and improve your skills.</p>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Skill Exchange</h3>
+            <p>Share your existing skills and learn new skills from other students.</p>
+        </div>
+
+        <div class="card">
+            <h3>Learning Materials</h3>
+            <p>Access useful study materials and resources for technical learning.</p>
+        </div>
+
+        <div class="card">
+            <h3>Assessments</h3>
+            <p>Test your knowledge and improve your technical understanding.</p>
+        </div>
+
+        <div class="card">
+            <h3>Progress Tracking</h3>
+            <p>Monitor your learning journey and completed activities.</p>
+        </div>
+
+        <div class="card">
+            <h3>Certificates</h3>
+            <p>Earn certificates after successfully completing assessments.</p>
+        </div>
+
+        <div class="card">
+            <h3>Community Learning</h3>
+            <p>Connect with learners and grow through knowledge sharing.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section about" id="about">
+    <h2>About SkillBuddy</h2>
+    <p>
+        SkillBuddy is a Java Full Stack project designed to
+        connect students who want to teach and learn technical
+        skills. It encourages peer-to-peer learning, practical
+        knowledge sharing and continuous skill development.
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 SkillBuddy | All Rights Reserved</p>
+    <p>Learn • Share • Grow</p>
+</footer>
+
+</body>
+</html>
